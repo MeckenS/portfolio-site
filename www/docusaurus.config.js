@@ -94,7 +94,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/Azure',
               },
             ],
           },
@@ -120,7 +120,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: '/Azure',
               },
               {
                 label: 'GitHub',
