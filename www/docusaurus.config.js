@@ -46,7 +46,11 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false,
+        //blog: {
+          //blogTitle: 'My blog!',
+          //blogDescription: 'An awesome blog on Cloud computing!',
+          //postsPerPage: 5,
+        //},
         theme: {
           customCss: './src/css/custom.css',
         },
