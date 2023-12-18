@@ -94,7 +94,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/Azure',
+                to: '/docs/Azure/Azure%20Managed%20Identities',
               },
             ],
           },
@@ -120,7 +120,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/Azure',
+                to: '/docs/Azure/Azure%20Managed%20Identities',
               },
               {
                 label: 'GitHub',
