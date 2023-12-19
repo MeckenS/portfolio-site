@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/Azure/Azure%20Managed%20Identities">
-            Docusaurus Tutorial - 5min ⏱️
+            Check out what I've been working on ➡️
           </Link>
         </div>
       </div>

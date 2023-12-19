@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Hi, I\'m Mecken👨‍💻',
+  tagline: 'This is my cool Docusaurus site where I document things',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -48,7 +48,7 @@ const config = {
         },
         //blog: {
           //blogTitle: 'My blog!',
-          //blogDescription: 'An awesome blog on Cloud computing!',
+          //blogDescription: 'An awesome blog on cloud computing!',
           //postsPerPage: 5,
         //},
         theme: {
@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/cloud-computing-icon.png',
       navbar: {
         title: 'Mecken Swyter',
         logo: {
@@ -76,13 +76,18 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'My Projects',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/meckens/',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            href: 'https://www.linkedin.com/in/mecken-swyter/',
+            label: 'LinkedIn',
+            position: 'right'
           },
         ],
       },
