@@ -62,12 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/cloud-computing-icon.png',
+      image: 'img/lighting.png',
       navbar: {
         title: 'Mecken Swyter',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/cloud-computing-icon.png',
+          src: 'img/lighting.png',
           width: 32,
           height: 32,
         },
