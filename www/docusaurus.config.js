@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hi, I\'m Mecken👨‍💻',
-  tagline: 'This is my cool Docusaurus site where I document things',
+  title: 'Hi👋',
+  tagline: 'This is where I document all the things cloud...☁️',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -61,6 +61,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       // Replace with your project's social card
       image: 'img/lighting.png',
       navbar: {
