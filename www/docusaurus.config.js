@@ -67,14 +67,15 @@ const config = {
         respectPrefersColorScheme: false,
       },
       // Replace with your project's social card
-      image: 'img/lighting.png',
+      image: 'img/cloud.png',
       navbar: {
         title: 'Mecken Swyter',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/lighting.png',
+          src: 'img/cloud.png',
           width: 32,
           height: 32,
+          style: {textAlign: 'center'},
         },
         items: [
           {
