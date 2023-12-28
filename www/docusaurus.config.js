@@ -84,11 +84,11 @@ const config = {
             position: 'left',
             label: 'How-to Guides',
           },
-          {
-            position: 'left',
-            label: 'Projects',
-            to: 'docs/Projects',
-          },
+          // {
+          //   position: 'left',
+          //   label: 'Projects',
+          //   to: 'docs/Projects',
+          // },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'html',
