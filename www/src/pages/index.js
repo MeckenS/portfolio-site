@@ -15,14 +15,14 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <p style={{fontSize:'20px'}}>{siteConfig.tagline}</p>
+        {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/Azure/Azure%20Managed%20Identities">
             Check it out ➡️
           </Link>
-        </div>
+        </div> */}
       </div>
     </header>
   );

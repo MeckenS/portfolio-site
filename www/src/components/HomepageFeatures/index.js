@@ -4,12 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Scaling',
     Svg: require('@site/static/img/033-cloud computing-failover.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explore effective techniques for scaling infrastructure and applications to meet growing demands and optimize performance.
       </>
     ),
   },
