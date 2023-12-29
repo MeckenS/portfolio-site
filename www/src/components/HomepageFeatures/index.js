@@ -4,31 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Securing',
+    Svg: require('@site/static/img/026-cloud-secure.svg').default,
+    description: (
+      <>
+        Investigate vendor specific and open-source tools to help mitigate Threats, Risks and Vulnerabilities.
+      </>
+    ),
+  },
+  {
     title: 'Scaling',
     Svg: require('@site/static/img/033-cloud computing-failover.svg').default,
     description: (
       <>
-        Explore effective techniques for scaling infrastructure and applications to meet growing demands and optimize performance.
+        Explore techniques for scaling infrastructure and applications to meet growing demands and optimize performance.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/026-cloud-secure.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
+    title: 'Monitoring',
     Svg: require('@site/static/img/014-search.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Utilize monitoring solutions to gather logging data and track resource utilization. Make the tansition from being reactive to proactive.
       </>
     ),
   },

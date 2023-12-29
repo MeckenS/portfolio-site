@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/MeckenS/portfolio-site/blob/main/www/',
         },
         //blog: {
           //blogTitle: 'My blog!',
@@ -147,7 +147,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: 'Built with Docusaurus 🦖 hosted with Azure ☁️',
+        copyright: 'Built with Docusaurus 🦖 hosted on Azure ☁️',
       },
       prism: {
         theme: prismThemes.github,
