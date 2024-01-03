@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/026-cloud-secure.svg').default,
     description: (
       <>
-        Investigate vendor specific and open-source tools to help mitigate Threats, Risks and Vulnerabilities.
+        Investigate Threats, Risks and Vulnerabilities using vendor specific and open-source tools.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/014-search.svg').default,
     description: (
       <>
-        Utilize monitoring solutions to gather logging data and track resource utilization. Make the tansition from being reactive to proactive.
+        Utilize monitoring solutions to gather log data and track resource utilization.
       </>
     ),
   },
