@@ -3,7 +3,7 @@ tags:
   - Azure
   - Entra ID
 ---
-
+import Image from '@theme/IdealImage';
 
 # Azure Managed Identities
 
@@ -11,28 +11,19 @@ Managed identities can be used to manage Azure resources without using hardcoded
 
 ## Creating a System Assigned managed identity
 
-import ImageOne from './system-assigned-indentity.png';
-
-<img src={ImageOne} alt="System Assigned Identity" style={{width: 400}} />
-
 1. Navigate to **Home > Virtual Machines > VM > Identity.**
-2. Under the **System assigned** tab, toggle **Status** to **On**.   
+2. Under the **System assigned** tab, toggle **Status** to **On**.
+
+    <Image img={require('./system-assigned-indentity.png')} />
+    
 3. Navigate to **Home** > **Resource Groups** > **[ Resource group ]** > **Access control (IAM)**    
 4. **+ Add** > **Add role assignment**
 5. Select a Role, select members (managed identity), **Review + assign**.
 6. Use RDP (Remote Desktop) to connect to the VM. 
-7. Open PowerShell (Admin) and type the following command to automatically connect (without manually entering credentials) to the Azure resources the VM has access to via System managed identity with the following command: `az login --identity`
-    
-   
-    
+7. Open PowerShell (Admin) and type the following command to automatically connect (without manually entering credentials) to the Azure resources the VM has access to via System managed identity with the following command: `az login --identity`   
 8. Type `az group list` to verify access to the resource group.
     
-    
-    
-
 ## Creating a User Assigned managed identity
-
-![System Assigned Identity](./system-assigned-indentity.png)
 
 1. Navigate to **Home > Managed Identities**.
 2. Select **+ Create**, fill out the necessary information.
