@@ -1,18 +1,23 @@
+---
+tags:
+  - Azure
+  - Entra ID
+---
+
+
 # Azure Managed Identities
 
 Managed identities can be used to manage Azure resources without using hardcoded credentials - removing the need to enter credentials from a VM (or other resources such as Azure Functions) that are accessing resources the managed identity has been given access to.  There are two types of managed identities - **User Assigned** and **System Assigned**. User assigned can be used by multiple resources and system assigned is tied to one specific VM (resource). User assigned is created as a **Managed Identity** that can be assigned to multiple VMs. 
 
 ## Creating a System Assigned managed identity
 
+import ImageOne from './system-assigned-indentity.png';
+
+<img src={ImageOne} alt="System Assigned Identity" style={{width: 400}} />
+
 1. Navigate to **Home > Virtual Machines > VM > Identity.**
-2. Under the **System assigned** tab, toggle **Status** to **On**.
-    
-   
-    
-3. Navigate to **Home** > **Resource Groups** > **[ Resource group ]** > **Access control (IAM)**
-    
-    
-    
+2. Under the **System assigned** tab, toggle **Status** to **On**.   
+3. Navigate to **Home** > **Resource Groups** > **[ Resource group ]** > **Access control (IAM)**    
 4. **+ Add** > **Add role assignment**
 5. Select a Role, select members (managed identity), **Review + assign**.
 6. Use RDP (Remote Desktop) to connect to the VM. 
@@ -26,6 +31,8 @@ Managed identities can be used to manage Azure resources without using hardcoded
     
 
 ## Creating a User Assigned managed identity
+
+![System Assigned Identity](./system-assigned-indentity.png)
 
 1. Navigate to **Home > Managed Identities**.
 2. Select **+ Create**, fill out the necessary information.
