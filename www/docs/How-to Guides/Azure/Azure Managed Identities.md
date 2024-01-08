@@ -4,6 +4,7 @@ tags:
   - Entra ID
 ---
 import Image from '@theme/IdealImage';
+import Test from './system-assigned-indentity.png';
 
 # Azure Managed Identities
 
@@ -15,7 +16,7 @@ Managed identities can be used to manage Azure resources without using hardcoded
 2. Under the **System assigned** tab, toggle **Status** to **On**.
 
     <Image img={require('./system-assigned-indentity.png')} />
-    
+
 3. Navigate to **Home** > **Resource Groups** > **[ Resource group ]** > **Access control (IAM)**    
 4. **+ Add** > **Add role assignment**
 5. Select a Role, select members (managed identity), **Review + assign**.
@@ -28,7 +29,7 @@ Managed identities can be used to manage Azure resources without using hardcoded
 1. Navigate to **Home > Managed Identities**.
 2. Select **+ Create**, fill out the necessary information.
     
-    
+<img src={Test} style={{width: 200}} />    
     
 3. Select **Review + Create > Create**.
 4. Repeat the following steps for each VM that will be configured with User assigned managed identity.

@@ -38,10 +38,8 @@ const config = {
     [
       '@docusaurus/plugin-ideal-image',
       {
-        quality: 70, 
         max: 500, // max resized image's size. 
         min: 450, // min resized image's size. if original is lower, use that size. 
-        steps: 2, // the max number of images generated between min and max (inclusive) 
       },
     ],
   ],
