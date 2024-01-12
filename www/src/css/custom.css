@@ -4,6 +4,17 @@
  * work well for content-centric websites.
  */
 
+ /* Classes to use for Image plugin */
+ .image-global {
+  margin: 1em;
+ }
+
+@media only screen and (min-width: 996px) {
+  .image-responsive {
+    width: 85%;
+  }
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #26b0d5;
