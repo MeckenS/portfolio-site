@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hi👋',
-  tagline: 'Securing, Scaling, Monitoring: Documenting a Cloud and Cyber Journey ☁️🚀',
+  title: 'Securing, Scaling, Monitoring',
+  tagline: 'Documenting a System Administrator Journey 🛡️☁️',
   favicon: 'img/cloud.png',
 
   // Set the production url of your site here
@@ -54,6 +54,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/MeckenS/portfolio-site/blob/main/www/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         //blog: {
           //blogTitle: 'My blog!',
@@ -161,6 +163,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['powershell'],
       },
     }),
 };

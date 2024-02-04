@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h2" style={{fontSize:'34px'}}>
           {siteConfig.title}
         </Heading>
         <p style={{fontSize:'20px'}}>{siteConfig.tagline}</p>
