@@ -1,7 +1,15 @@
 ---
+description: A guide on creating and configuring Managed identities that can be used to manage Azure resources without using hardcoded credentials
+draft: false
 tags:
   - Azure
   - Entra ID
+keywords:
+  - Azure
+  - Entra ID
+last_update:
+  date: 2/4/2024
+  author: Mecken Swyter
 ---
 import Image from '@theme/IdealImage';
 

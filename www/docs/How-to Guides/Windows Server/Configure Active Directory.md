@@ -1,10 +1,17 @@
 ---
-last_update:
-  author: Mecken Swyter
+description: A guide on configuring Active Directory using PowerShell
+draft: true
 tags:
   - Windows Server
   - PowerShell
   - Active Directory
+keywords:
+  - Windows Server
+  - PowerShell
+  - Active Directory
+last_update:
+  date: 2/4/2024
+  author: Mecken Swyter
 ---
 import Image from '@theme/IdealImage';
 
