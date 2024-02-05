@@ -1,6 +1,5 @@
 ---
-description: A guide on creating and configuring Managed identities that can be used to manage Azure resources without using hardcoded credentials
-draft: false
+description: A guide on creating and configuring Managed identities
 tags:
   - Azure
   - Entra ID
