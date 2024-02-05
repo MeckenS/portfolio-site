@@ -1,6 +1,5 @@
 ---
 description: A guide on configuring Active Directory using PowerShell
-draft: true
 tags:
   - Windows Server
   - PowerShell
