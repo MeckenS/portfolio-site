@@ -1,6 +1,6 @@
 ---
 description: A guide on configuring Storage Spaces Direct on a 2-node Failover Cluster
-unlisted: true
+unlisted: false
 tags:
   - Windows Server
   - PowerShell
@@ -30,34 +30,34 @@ To circumvent this, we will create a domain controller as a VM using Hyper-V on 
 
 If Hyper-V hasn't already been enabled, it can be enabled running the cmdlet below in PowerShell as an Administrator.
 
-```powershell
+```powershell title="PowerShell"
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
 :::
 
-### Configure Windows Failover Cluster
+### Step 1: Configure Windows Failover Cluster
 
 1. Install the Windows Failover Cluster feature
-```powershell
+```powershell title="PowerShell"
 Install-WindowsFeature –Name Failover-Clustering –IncludeManagementTools
 ```
 2. Validate the cluster nodes to confirm all hardware is ready for Failover Clustering and Storage Spaces Direct.
-```powershell
+```powershell title="PowerShell"
 Test-Cluster -Node hci-svr1, hci-svr2 -Include "Storage Spaces Direct", Inventory, Network, "System Configuration"
 ```
 :::note
 
-Warnings are to be expected - especially if using consumer grade hardware as in this lab. As long as the validation dose not report any failures, the cluster and S2D storage pool shouldn't have any problems being created.
+Warnings are to be expected - especially if using consumer grade hardware as in this lab. As long as the validation does not report any failures, the cluster and S2D storage pool shouldn't have any problems being created.
 :::
 
 3. Create the cluster and assign an IP address. Do not attach storage to the cluster - this will be configured in a subsequent step using Storage Spaces Direct.
-```powershell
+```powershell title="PowerShell"
 New-Cluster -Name S2DCluster -Node hci-svr1, hci-svr2 -NoStorage -StaticAddress 192.168.10.14
 ``` 
-### Create an S2D storage pool and add eligible disks
+### Step 2: Create an S2D storage pool and add eligible disks
 
 1. Enable an S2D cluster. 
-```powershell
+```powershell title="PowerShell" title="PowerShell"
 Enable-ClusterS2D -CacheState Disabled -Autoconfig:0 -SkipEligibilityChecks -Confirm:$false
 ``` 
 This Cmdlet is disabling the S2D caching functionality, declining the autoconfig, and skipping any eligibility checks. This deployment does not support the minimum number of disks to enable caching; however, in an all NVMe deployment, it would be recommended to disable caching anyway as it is best utilized when there is a mix of different types of drives.
