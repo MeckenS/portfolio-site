@@ -10,7 +10,7 @@ keywords:
   - PowerShell
   - Storage Spaces Direct
 last_update:
-  date: 2/9/2024
+  date: 5/29/2024
   author: Mecken Swyter
 ---
 import Image from '@theme/IdealImage';
