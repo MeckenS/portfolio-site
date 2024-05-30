@@ -49,7 +49,10 @@ Test-Cluster -Node hci-svr1, hci-svr2 -Include "Storage Spaces Direct", Inventor
 
 Warnings are to be expected - especially if using consumer grade hardware as in this lab. As long as the validation does not report any failures, the cluster and S2D storage pool shouldn't have any problems being created.
 :::
+:::tip
 
+In this lab scenario, the disks to be inclduded in the Storage Spaces Direct storage pool had to be unallocated and not have any form of partitioning or files systems on the disks before the disks became eligible.
+:::
 3. Create the cluster and assign an IP address. Do not attach storage to the cluster - this will be configured in a subsequent step using Storage Spaces Direct.
 ```powershell title="PowerShell"
 New-Cluster -Name S2DCluster -Node hci-svr1, hci-svr2 -NoStorage -StaticAddress 192.168.10.14
@@ -65,4 +68,9 @@ This Cmdlet is disabling the S2D caching functionality, declining the autoconfig
 2. Create a Storage Pool
 ```powershell title="PowerShell" title="PowerShell"
 New-StoragePool -StorageSubSystemName S2DCluster.techuplab.local -FriendlyName S2DStoragePool -ProvisioningTypeDefault Fixed -ResiliencySettingNameDefault Mirror -PhysicalDisks (Get-StorageSubSystem -Name S2DCluster.techuplab.local | Get-PhysicalDisk)
-```  
+```
+3. Create a Cluster Shared Volume (CSV).
+```powershell title="PowerShell" title="PowerShell"
+New-Volume -StoragePoolFriendlyName S2DStoragePool -FriendlyName "CSV2" -FileSystem CSVFS_ReFS -Size 100GB
+```
+We can now create a VM using the CSV and add it as a Role in the Failover Cluster to make it highly available.
