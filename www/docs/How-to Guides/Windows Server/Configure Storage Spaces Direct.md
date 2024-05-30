@@ -61,3 +61,8 @@ New-Cluster -Name S2DCluster -Node hci-svr1, hci-svr2 -NoStorage -StaticAddress 
 Enable-ClusterS2D -CacheState Disabled -Autoconfig:0 -SkipEligibilityChecks -Confirm:$false
 ``` 
 This Cmdlet is disabling the S2D caching functionality, declining the autoconfig, and skipping any eligibility checks. This deployment does not support the minimum number of disks to enable caching; however, in an all NVMe deployment, it would be recommended to disable caching anyway as it is best utilized when there is a mix of different types of drives.
+
+2. Create a Storage Pool
+```powershell title="PowerShell" title="PowerShell"
+New-StoragePool -StorageSubSystemName S2DCluster.techuplab.local -FriendlyName S2DStoragePool -ProvisioningTypeDefault Fixed -ResiliencySettingNameDefault Mirror -PhysicalDisks (Get-StorageSubSystem -Name S2DCluster.techuplab.local | Get-PhysicalDisk)
+```  
