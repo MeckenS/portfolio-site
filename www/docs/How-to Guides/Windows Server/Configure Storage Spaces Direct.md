@@ -51,7 +51,7 @@ Warnings are to be expected - especially if using consumer grade hardware as in 
 :::
 :::tip
 
-In this lab scenario, the disks to be inclduded in the Storage Spaces Direct storage pool had to be unallocated and not have any form of partitioning or files systems on the disks before the disks became eligible.
+In this lab scenario, the disks to be included in the Storage Spaces Direct storage pool had to be unallocated with no form of partitioning or files systems before the disks became eligible.
 :::
 3. Create the cluster and assign an IP address. Do not attach storage to the cluster - this will be configured in a subsequent step using Storage Spaces Direct.
 ```powershell title="PowerShell"
