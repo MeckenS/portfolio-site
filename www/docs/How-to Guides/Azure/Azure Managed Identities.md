@@ -14,7 +14,12 @@ import Image from '@theme/IdealImage';
 
 # Azure Managed Identities
 
-Managed identities can be used to manage Azure resources without using hardcoded credentials - removing the need to enter credentials from a VM (or other resources such as Azure Functions) that are accessing resources the managed identity has been given access to.  There are two types of managed identities - **User Assigned** and **System Assigned**. User assigned can be used by multiple resources and system assigned is tied to one specific VM (resource). User assigned is created as a **Managed Identity** that can be assigned to multiple VMs. 
+Managed identities can be used to manage Azure resources without using hardcoded credentials - removing the need to enter credentials from a VM (or other resources such as Azure Functions) that are accessing resources the managed identity has been given access to.  There are two types of managed identities - **User Assigned** and **System Assigned**. User assigned can be used by multiple resources and system assigned is tied to one specific VM (resource). User assigned is created as a **Managed Identity** that can be assigned to multiple VMs.
+
+:::tip
+
+System-assigned managed identities are ideal for scenarios where one resource is involved and the identity is not required long-term. For example, if the resource is deleted, the managed identity would follow the lifecycle of that resource and be deleted along with it. User-assigned managed identities are ideal for scenarios that involve managing multiple resources and in cases where the identity needs to outlive the resource(s).
+:::
 
 ## Creating a System Assigned managed identity
 
