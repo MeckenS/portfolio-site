@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-size-base: 90%;
+  --ifm-font-size-base: 95%;
   --ifm-color-primary: #26b0d5;
   --ifm-color-primary-dark: #229ec0;
   --ifm-color-primary-darker: #2096b5;
