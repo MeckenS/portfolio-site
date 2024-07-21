@@ -26,6 +26,7 @@ Navigate to PowerShell, Run as an administrator, and install the Azure PowerShel
 ```powershell title="PowerShell"
 Install-Module az -Scope AllUsers -Force
 ```
+
 ## Authenticate to Azure
 Authenticate to an Azure tenant. This method will involve the `Az` PowerShell module opening a web browser window to authenticate with an account that has rights to a Azure subscription.
 ```powershell title="PowerShell"
