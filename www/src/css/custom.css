@@ -9,6 +9,11 @@
   margin: 1em;
  }
 
+ .menu__link {
+  line-height: 1.10;
+  font-size: .90rem
+}
+
 @media only screen and (min-width: 996px) {
   .image-responsive {
     width: 85%;
