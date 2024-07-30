@@ -9,6 +9,10 @@
   margin: 1em;
  }
 
+ .small-image {
+  padding-left: 1rem;
+ }
+
  .menu__link {
   line-height: 1.10;
   font-size: .90rem
@@ -17,6 +21,9 @@
 @media only screen and (min-width: 996px) {
   .image-responsive {
     width: 85%;
+  }
+  .small-image {
+    width: 60%;
   }
 }
 

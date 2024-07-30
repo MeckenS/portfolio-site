@@ -63,5 +63,5 @@ It is recommended to setup two separate passkeys in the event that one of them b
 3. From the **Security** tab, select **Add a sign-in method**. Under choose a method, select **Security key**.
 4. Follow the on-screen instructions to finish setting up the YubiKey. If a PIN has not already been setup for the YubiKey, you will be prompted to setup a PIN and prompted to touch the YubiKey to finalize the setup.
 5. Now store the YubiKey and PIN in a safe place.
-<Image className='image-global' img={require('../assets/entra-emergency-access-account/yubikey-setup.png')} />
+<Image className='small-image' img={require('../assets/entra-emergency-access-account/yubikey-setup.png')} />
 
