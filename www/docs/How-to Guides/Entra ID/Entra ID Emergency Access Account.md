@@ -48,7 +48,7 @@ Be sure to use **.onmicrosoft.com* for the **User principal name** and use a str
 
 
 ## Setup Phishing-resistant authentication
-In the past, it has been recommended by administrators to avoid using Muti-factor authentication (MFA) with the break glass account and to use only a very strong password; however, Microsoft is now requiring MFA to access the Azure portal (this inludes the Entra admin portal). To satisfy this requirement and avoid tying MFA to an individual user, we'll setup a FIDO2 security key as a means of strong authentication for the break glass account.
+In the past, it has been recommended by administrators to avoid using Multi-factor authentication (MFA) with the break glass account and to use only a very strong password; however, Microsoft is now requiring MFA to access the Azure portal (this inludes the Entra admin portal). To satisfy this requirement and avoid tying MFA to an individual user, we'll setup a FIDO2 security key as a means of strong authentication for the break glass account.
 
 :::tip
 Verify that Passkey (FIDO2) is enabled as an authentication method. This can be verified from the Entra admin center by navigating to **Protection** > **Authentication methods** > **Polices** > **Passkey (FIDO2)** and verifying the method is enabled for All users or Selected groups.
