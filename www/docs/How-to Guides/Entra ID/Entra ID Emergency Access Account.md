@@ -137,4 +137,4 @@ If increasing the **Frequency of evaluation** to reduce the monthly cost of the 
 To verify everything is working as expected, sign in to entra.microsoft.com using the Emergency access (Break glass) account to generate some sign-in logs to activate the alert. If everything is working as expected, alerts should start being received via the notification methods defined in the action group associated with the alert. Additionally, navigating to **Monitoring** > **Alerts** from the Log Analytics workspace should display a list of recently fired alerts.
 <Image className='step-image' img={require('../assets/entra-emergency-access-account/break-glass-alerts.png')} />
 
-If alerts are being received, everything has been configured correctly and that concludes this guide. 
+If alerts are being received, everything has been configured correctly. 
