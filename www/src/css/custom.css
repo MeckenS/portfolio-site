@@ -9,8 +9,10 @@
   margin: 1em;
  }
 
- .small-image {
-  padding-left: 1rem;
+ .step-image {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
  }
 
  .menu__link {
